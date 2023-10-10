@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 // import day from '../assets/earthDay.webp';
 // import night from '../assets/earthNight.webp';
 // import clouds from '../assets/earthClouds.webp';
-// import { getSunDirection } from "../utils/utils";
+// import { getSunDirection }  from "../utils/utils";
 
 const Scene = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);

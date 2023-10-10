@@ -38,7 +38,7 @@ function DropzoneComponent(props) {
       let res = postData({ "imgBase64": base64 })
       res.then((res) => {
         if (res.status === "ok") {
-          fetch("http://localhost:5000/getSong", {
+          fetch("https://jokape27.pythonanywhere.com/getSong", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
@@ -46,7 +46,7 @@ function DropzoneComponent(props) {
             }
           }).then((res) => {
             // return res.json();
-            setSrc("http://localhost:5000/getSong");
+            setSrc("https://jokape27.pythonanywhere.com/getSong");
           setLoading(false);
           }).then((res) => {
             

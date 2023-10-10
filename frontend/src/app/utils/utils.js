@@ -1,5 +1,5 @@
 export function postData(data){
-  return fetch('http://127.0.0.1:5000/computeImage', {
+  return fetch('https://jokape27.pythonanywhere.com/computeImage', {
         method: "POST",
         body: JSON.stringify(data),
         headers: {"Content-type": "application/json; charset=UTF-8"},
